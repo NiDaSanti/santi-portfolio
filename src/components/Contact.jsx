@@ -14,7 +14,7 @@ const Contact = () => {
         <a href="tel:+19199314345" className="contact-item" aria-label="Phone">
           <FaPhone /> (919) 931-4345
         </a>
-        <a href="https://www.linkedin.com/in/nicholassantiago" target="_blank" rel="noopener noreferrer" className="contact-item" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/nicholas-santiago-28b405137/" target="_blank" rel="noopener noreferrer" className="contact-item" aria-label="LinkedIn">
           <FaLinkedin /> LinkedIn
         </a>
         <a href="https://github.com/NiDaSanti" target="_blank" rel="noopener noreferrer" className="contact-item" aria-label="GitHub">
