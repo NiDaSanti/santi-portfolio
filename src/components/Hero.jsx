@@ -23,7 +23,7 @@ const Hero = () => {
           <p>
             I bring a decade of military leadership, a strong record in sales, and hands-on experience in software development. I build solutions that drive results.
           </p>
-          <a href="/2024-santiago-resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
+          <a href="/santiago-resume-2025.pdf" target="_blank" rel="noopener noreferrer" className="resume-btn">
             <FaFileDownload style={{marginRight: '8px', verticalAlign: 'middle'}} />
             Resume (PDF)
           </a>
