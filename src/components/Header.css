@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 2px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.header-nav a {
+  color: #1e293b;
+  font-size: 1.08rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  background: #e0e7ff;
+  color: #2563eb;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: #2563eb;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s, background 0.2s;
+    outline: none;
+    z-index: 101;
+  }
+
+  .menu-toggle:active,
+  .menu-toggle:focus {
+    color: #ffd600;
+    background: #e0e7ff;
+  }
+
+  .menu-toggle svg {
+    vertical-align: middle;
+    font-size: 2.2rem;
+    transition: color 0.2s;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(37,99,235,0.10);
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .mobile-nav a {
+    color: #2563eb;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .mobile-nav a:hover {
+    background: #e0e7ff;
+    color: #1e293b;
+  }
+}

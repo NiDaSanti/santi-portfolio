@@ -1,0 +1,294 @@
+/* Experience Section - Featured + Timeline */
+.experience-section {
+  padding: 6rem 2.5rem;
+  background: linear-gradient(120deg, #fffde7 60%, #e0e7ff 100%);
+  position: relative;
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e40af;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  animation: fadeInDown 1s ease;
+}
+
+/* Featured Current Experience (Sunrun) */
+.featured-experience {
+  background: #fff;
+  border: 3px solid #ffd600;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 32px rgba(255,214,0,0.18);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.2s ease;
+}
+
+.featured-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.featured-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.featured-info h3 {
+  font-size: 1.75rem;
+  color: #ffd600;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.date-range {
+  font-size: 1rem;
+  color: #388e3c;
+  font-weight: 700;
+}
+
+.featured-achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featured-achievements li {
+  color: #1e40af;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.featured-achievements li::before {
+  content: '☀️';
+  position: absolute;
+  left: 0;
+  color: #ffd600;
+  font-weight: bold;
+}
+
+/* Previous Experience Section */
+.previous-experience {
+  margin-top: 3rem;
+}
+
+.previous-title {
+  font-size: 1.75rem;
+  color: #1e40af;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Tech Experience */
+.timeline-item.tech {
+  background: #fff;
+  border-radius: 20px;
+  border: 3px solid #2563eb;
+  box-shadow: 0 4px 24px rgba(37,99,235,0.18);
+  padding: 7px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.3s ease;
+}
+
+.timeline-item.tech h4 {
+  color: #1e40af;
+  font-weight: 900;
+}
+
+.timeline-item.tech .dates {
+  color: #2563eb;
+  font-weight: 700;
+  padding: 7px;
+}
+
+/* USMC Experience */
+.timeline-item.usmc {
+  background: #7c0a02;
+  border-radius: 20px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 4px 24px rgba(124,10,2,0.18);
+  position: relative;
+  padding: 7px;
+  z-index: 1;
+  animation: fadeInUp 1.3s ease;
+}
+
+.timeline-item.usmc h4 {
+  color: #ffd700;
+  font-weight: 900;
+}
+
+.timeline-item.usmc .dates {
+  color: #fff;
+  font-weight: 700;
+}
+
+.timeline-item.usmc .description {
+  color: #fffde7;
+  font-weight: 500;
+}
+
+.timeline-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid #2563eb;
+  background: #fff;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h4 {
+  font-size: 1.25rem;
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline-content .company {
+  font-size: 1.0625rem;
+  color: #2563eb;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content .dates {
+  font-size: 0.9375rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-content .description {
+  font-size: 1rem;
+  color: #1e40af;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.timeline-item.tech .timeline-content,
+.timeline-item.usmc .timeline-content {
+  padding: 7px 0;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 4rem 1rem;
+  }
+
+  .experience-section h2 {
+    font-size: 2rem;
+  }
+
+  .featured-experience {
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .featured-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .featured-logo {
+    width: 100px;
+  }
+
+  .featured-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .previous-title {
+    font-size: 1.5rem;
+    gap: 6px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .timeline-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.125rem;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .experience-section {
+    padding: 4rem 1rem;
+  }
+  .experience-container {
+    padding: 0 0.5rem;
+  }
+  .featured-experience,
+  .timeline-item.tech,
+  .timeline-item.usmc {
+    padding: 2rem 1rem;
+  }
+}
